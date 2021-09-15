@@ -1,58 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>about codes</title>
+  <title>Table of Contents</title>
+  <link href="style.css" rel="stylesheet" />
 </head>
-<body>
-	<form>
- First name:<br>
-<input type="text" name="firstname">
-<br>
- Last name:<br>
-<input type="text" name="lastname">
-</form> 
-	<article>
-   <header>
-     <h1>What Does WWF Do?</h1>
-     <p>WWF's mission:</p>
-   </header>
-   <p>WWF's mission is to stop the degradation of our planet's natural environment,
-  and build a future in which humans live in harmony with nature.</p>
-</article> 
-
-<footer>
-   <p>Posted by: Hege Refsnes</p>
-   <p>Contact information: <a href="mailto:someone@example.com">
-  someone@example.com</a>.</p>
-</footer> 
-
-<p>To open a file, select:</p>
-<p><kbd>File | Open...</kbd></p>
-<samp>
-	demo.example.com login: Apr 12 09:10:17
-	Linux 2.6.10-grsec+gg3+e+fhs6b+nfs+gr0501+++p3+c4a+gr2b-reslog-v6.189
-</samp>
-<br/>
-<code>
-	var person = { firstName:"Bill", lastName:"Gates", age:50, eyeColor:"blue" }
-</code>
-
-<p>Coding Example:</p>
-<!--解决不保留多余空格和拆行的问题 pre -->
-<code>
-<pre>
-var person = {
-    firstName:"Bill",
-    lastName:"Gates",
-    age:50,
-    eyeColor:"blue"
-}
-</pre>
-</code>
-
-<p>Einstein wrote:</p>
-<p><var>E = m c<sup>2</sup></var></p>
-
+<body >
+  <h1 onclick="handleClick(this)">Welcome to my world</h1>
+  <h2>Whom this page is for?</h2>
+  <p>Idk yet</p>
+  <h1 onclick="handleClick(this)">Chapter 1</h1>
+  <h2>What you will learn in this chapter</h2>
+  <h2>Summary</h2>
+  <h1 onclick="handleClick(this)">Chapter 2</h1>
+  <h2>Recap</h2>
+  <h2>Conclusion</h2>
+  <script>
+  function handleClick(node) {
+    var value = node.getAttribute('class') || '';
+    value = value === '' ? 'clicked' : '';
+    node.setAttribute('class', value);
+  }
+</script>
 </body>
 </html>
+<!--<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>emoji</title>
+</head>
+<body>
+	<h1>我的第一个emoji</h1>
+	<p>&#128512</p>
+	<p>我将显示 A B C</p>
+	<p>我将显示 &#65; &#66; &#67;</p>
+</body>
+</html>-->
